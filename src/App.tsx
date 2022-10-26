@@ -1,10 +1,12 @@
+import { FormProvider } from './contexts/FormContext';
 import {Router} from './router'
 
 
 function App() {
   return (
-
-    <Router />
+    <FormProvider>
+       <Router />
+    </FormProvider>
     
   );
 }
